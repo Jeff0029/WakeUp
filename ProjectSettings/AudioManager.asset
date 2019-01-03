@@ -4,7 +4,7 @@
 AudioManager:
   m_ObjectHideFlags: 0
   m_Volume: 1
-  Rolloff Scale: 1
+  Rolloff Scale: 3.76
   Doppler Factor: 1
   Default Speaker Mode: 2
   m_SampleRate: 0
@@ -13,5 +13,5 @@ AudioManager:
   m_RealVoiceCount: 32
   m_SpatializerPlugin: 
   m_AmbisonicDecoderPlugin: 
-  m_DisableAudio: 0
+  m_DisableAudio: 1
   m_VirtualizeEffects: 1
