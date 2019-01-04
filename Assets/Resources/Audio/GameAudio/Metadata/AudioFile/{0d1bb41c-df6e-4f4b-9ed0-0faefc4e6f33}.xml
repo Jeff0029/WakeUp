@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{0d1bb41c-df6e-4f4b-9ed0-0faefc4e6f33}">
+        <property name="assetPath">
+            <value>251984__redcheek__coffee-slurping.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>30.399999999999999</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{476f664f-5d99-41e2-a224-07cb76c73bfb}</destination>
+        </relationship>
+    </object>
+</objects>
