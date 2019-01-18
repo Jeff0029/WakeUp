@@ -88,19 +88,38 @@
     <None Include="Assets\Resources\Audio\GameAudio\Metadata\AudioFile\{0d1bb41c-df6e-4f4b-9ed0-0faefc4e6f33}.xml" />
     <None Include="Assets\Resources\Audio\GameAudio\Metadata\SnapshotGroup\{d3104b52-bbdf-45d0-9936-8c8a62d2b674}.xml" />
     <None Include="Assets\Resources\Audio\GameAudio\Metadata\ParameterPresetFolder\{28238ec5-442d-4919-8999-929f43fd4d0d}.xml" />
+    <None Include="Assets\_MK\MKToonFree\Shader\Inc\Outline\MKToonOutlineOnlyIO.cginc" />
     <None Include="Assets\Resources\Audio\GameAudio\Metadata\Bank\{7294e81d-d953-4096-af3b-0af25e2720e8}.xml" />
     <None Include="Assets\Resources\Audio\GameAudio\Metadata\BankFolder\{e0224d36-8ad5-418b-a884-f92836ed798a}.xml" />
+    <None Include="Assets\_MK\MKToonFree\Shader\MKToonFreeOutlineOnly.shader" />
+    <None Include="Assets\_MK\MKToonFree\Shader\Inc\Outline\MKToonOutlineOnlySetup.cginc" />
+    <None Include="Assets\_MK\MKToonFree\Shader\Inc\Common\MKToonInc.cginc" />
+    <None Include="Assets\_MK\MKToonFree\Shader\Inc\Outline\MKToonOutlineOnlyBase.cginc" />
     <None Include="Assets\Resources\Audio\GameAudio\Metadata\EncodingSetting\{1fa7201a-1e6c-4e72-b297-937e75ef1a54}.xml" />
+    <None Include="Assets\_MK\MKToonFree\Shader\Inc\ShadowCaster\MKToonShadowCasterIO.cginc" />
     <None Include="Assets\Resources\Audio\GameAudio\Metadata\Asset\{476f664f-5d99-41e2-a224-07cb76c73bfb}.xml" />
     <None Include="Assets\Resources\Audio\GameAudio\Metadata\EventFolder\{d4c563b5-f5df-4570-9baa-34e06cfd8813}.xml" />
+    <None Include="Assets\_MK\MKToonFree\Shader\Inc\Forward\MKToonForwardAddSetup.cginc" />
     <None Include="Assets\Resources\Audio\GameAudio\Metadata\Platform\{c4b5a8b3-8f3b-41ef-aa49-03e404a425a8}.xml" />
+    <None Include="Assets\_MK\MKToonFree\Shader\Inc\Forward\MKToonForwardIO.cginc" />
+    <None Include="Assets\_MK\MKToonFree\Shader\MKToonFreeMobile.shader" />
     <None Include="Assets\Resources\Audio\GameAudio\Metadata\Workspace.xml" />
+    <None Include="Assets\_MK\MKToonFree\Shader\Inc\Common\MKToonDef.cginc" />
     <None Include="Assets\Resources\Audio\GameAudio\Metadata\Return\{4a8657c8-4e6a-4c1b-922b-8e81d46972d7}.xml" />
+    <None Include="Assets\_MK\MKToonFree\Shader\Inc\Surface\MKToonSurfaceIO.cginc" />
+    <None Include="Assets\_MK\MKToonFree\Shader\Inc\ShadowCaster\MKToonShadowCasterSetup.cginc" />
     <None Include="Assets\Resources\Audio\GameAudio\Metadata\EffectPresetFolder\{f610ceeb-a5b0-4efd-bedc-585912ac0b5b}.xml" />
+    <None Include="Assets\_MK\MKToonFree\Shader\Inc\Forward\MKToonForwardBaseSetup.cginc" />
+    <None Include="Assets\_MK\MKToonFree\Shader\Inc\Common\MKToonLight.cginc" />
     <None Include="Assets\Resources\Audio\GameAudio\Metadata\Mixer.xml" />
+    <None Include="Assets\_MK\MKToonFree\Shader\MKToonFree.shader" />
     <None Include="Assets\Resources\Audio\GameAudio\Metadata\Tags.xml" />
     <None Include="Assets\Resources\Audio\GameAudio\Metadata\Event\{538ac041-48a9-47a4-a1ee-e4bd116e7a1f}.xml" />
+    <None Include="Assets\_MK\MKToonFree\Shader\Inc\Forward\MKToonForward.cginc" />
+    <None Include="Assets\_MK\MKToonFree\Shader\Inc\Common\MKToonV.cginc" />
+    <None Include="Assets\_MK\MKToonFree\Shader\Inc\Surface\MKToonSurface.cginc" />
     <None Include="Assets\Resources\Audio\GameAudio\Metadata\Master.xml" />
+    <None Include="Assets\_MK\MKToonFree\Shader\Inc\ShadowCaster\MKToonShadowCaster.cginc" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/JFV/Documents/Projects/WakeUp/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -331,6 +350,9 @@
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>C:/Users/JFV/Documents/Projects/WakeUp/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>C:/Users/JFV/Documents/Projects/WakeUp/Library/PackageCache/com.unity.collections@0.0.9-preview.9/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -677,6 +699,12 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Unity.Networking.Transport.csproj">
+      <Project>{442DF13B-C44E-47F4-78F9-5D6E8A99A1CE}</Project>
+      <Name>Unity.Networking.Transport</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

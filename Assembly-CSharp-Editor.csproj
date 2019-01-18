@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\_MK\MKToonFree\Editor\MKToonFreeEditor.cs" />
     <Compile Include="Assets\Editor\FMODMigrationUtil.cs" />
     <Compile Include="Assets\FMOD\GoogleVR\Editor\FmodGvrAudioRoomEditor.cs" />
     <Compile Include="Assets\FMOD\Plugins\Editor\FMOD\BankRefDrawer.cs" />
@@ -350,6 +351,9 @@
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>C:/Users/JFV/Documents/Projects/WakeUp/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>C:/Users/JFV/Documents/Projects/WakeUp/Library/PackageCache/com.unity.collections@0.0.9-preview.9/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>C:/Users/JFV/Documents/Projects/WakeUp/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
@@ -713,6 +717,10 @@
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{5C778973-2409-CE11-11D7-E39B10163E07}</Project>
       <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Networking.Transport.csproj">
+      <Project>{442DF13B-C44E-47F4-78F9-5D6E8A99A1CE}</Project>
+      <Name>Unity.Networking.Transport</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
