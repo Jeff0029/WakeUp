@@ -1,0 +1,7 @@
+https://assetstore.unity.com/packages/tools/network/photon-pun-2-120838
+V2.6
+Download and import
+
+https://assetstore.unity.com/packages/vfx/shaders/mk-toon-free-68972
+Download and import
+

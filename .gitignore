@@ -1,13 +1,17 @@
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-[Ll]ogs/
-[Aa]ssets/AssetStoreTools*
 
-# Visual Studio cache directory
+Temp/
+Obj/
+Build/
+Builds/
+Logs/
+Assets/AssetStoreTools*
+Assets/Photon*
+Assets/Plugins/PhotonWebGL*
+Assets/_MK*
+
+Library/*
 .vs/
+
 
 # Gradle cache directory
 .gradle/
@@ -42,3 +46,4 @@ sysinfo.txt
 
 # Crashlytics generated file
 Assets/StreamingAssets/crashlytics-build.properties
+
