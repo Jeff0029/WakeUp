@@ -8,6 +8,7 @@ Assets/AssetStoreTools*
 Assets/Photon*
 Assets/Plugins/PhotonWebGL*
 Assets/_MK*
+Assets/TextMesh Pro*
 
 Library/*
 .vs/
