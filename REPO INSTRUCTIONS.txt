@@ -1,6 +1,6 @@
-https://assetstore.unity.com/packages/tools/network/photon-pun-2-120838
-V2.6
+https://assetstore.unity.com/packages/tools/network/pun-2-free-119922
 Download and import
+app ID: 426409dc-580a-43aa-860d-86ccd7fb434e
 
 https://assetstore.unity.com/packages/vfx/shaders/mk-toon-free-68972
 Download and import
