@@ -5,3 +5,6 @@ Download and import
 https://assetstore.unity.com/packages/vfx/shaders/mk-toon-free-68972
 Download and import
 
+Window/TextMesh Pro/Import TMP Essential Resources
+import
+
