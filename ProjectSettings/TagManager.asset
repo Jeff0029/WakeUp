@@ -14,8 +14,8 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - MenuSelection
-  - 
+  - MenuSelector
+  - MenuSelectable
   - 
   - 
   - 
