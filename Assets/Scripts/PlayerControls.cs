@@ -81,4 +81,13 @@ public class PlayerControls : MonoBehaviour
         Vector3 move = new Vector3(Input.GetAxis("Horizontal")*speed, fallSpeed + controls.velocity.y, Input.GetAxis("Vertical") * speed);
         controls.Move(transform.TransformDirection(move) * Time.deltaTime);
     }
+
+    public void Teleport(Transform tpLocation)
+    {
+        controls.enabled = false;
+        transform.position = tpLocation.position;
+        transform.eulerAngles = new Vector3(transform.eulerAngles.x, tpLocation.eulerAngles.y, transform.eulerAngles.z);
+        xPivot.eulerAngles = new Vector3(tpLocation.eulerAngles.x, xPivot.eulerAngles.y, transform.eulerAngles.z);
+        controls.enabled = true;
+    }
 }
