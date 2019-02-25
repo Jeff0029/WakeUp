@@ -17,11 +17,12 @@ MonoBehaviour:
   - {fileID: 114036694035291472}
   EditorEvents:
   - {fileID: 114394550864839966}
+  - {fileID: 114669759321168080}
   MasterBanks:
   - {fileID: 114036694035291472}
   StringsBanks:
   - {fileID: 114240934103161382}
-  stringsBankWriteTime: 636821444231287231
+  stringsBankWriteTime: 636863890453684466
   cacheVersion: 3
 --- !u!114 &114036694035291472
 MonoBehaviour:
@@ -37,11 +38,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\JFV\Documents\Projects\WakeUp\Assets\Resources\Audio\GameAudio\Build\Desktop\Master
     Bank.bank
-  lastModified: 636821444231237251
+  lastModified: 636863890453634464
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 245184
+    Value: 519808
   Exists: 1
 --- !u!114 &114081006372288500
 MonoBehaviour:
@@ -79,11 +80,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\Resources\Audio\GameAudio\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636821444231287231
+  lastModified: 636863890453684466
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 716
+    Value: 772
   Exists: 1
 --- !u!114 &114340010331757870
 MonoBehaviour:
@@ -127,6 +128,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3500
+--- !u!114 &114506882679557944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/MixTest
+  guid: 8acf0158a288df46b13fb42f443c0f66
+  Banks: []
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 22332
 --- !u!114 &114585999203787296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,6 +193,29 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1984608
   Exists: 1
+--- !u!114 &114669759321168080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/MenuSoundtrack
+  guid: 25d8c34dac0ada40a5ef908ad13d9044
+  Banks:
+  - {fileID: 114036694035291472}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 22332
 --- !u!114 &114809451026288620
 MonoBehaviour:
   m_ObjectHideFlags: 0
