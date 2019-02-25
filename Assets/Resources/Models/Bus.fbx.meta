@@ -1,26 +1,20 @@
 fileFormatVersion: 2
-guid: cb953f94394bd2744b1dc833736407bf
+guid: 95922eb9dafc9b940b076b0b891884b5
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Security- low poly.003
-    100004: Security- low poly.004
+    100002: Window
     400000: //RootNode
-    400002: Security- low poly.003
-    400004: Security- low poly.004
-    2100000: Case
-    2100002: Front Face
-    2100004: Camera LIght
+    400002: Window
+    2100000: Material
+    2100002: Material.001
     2300000: //RootNode
-    2300002: Security- low poly.003
-    2300004: Security- low poly.004
+    2300002: Window
     3300000: //RootNode
-    3300002: Security- low poly.003
-    3300004: Security- low poly.004
-    4300000: Security- low poly.002
-    4300002: Security- low poly.004
-    4300004: Security- low poly.003
+    3300002: Window
+    4300000: BusHull
+    4300002: Window
   externalObjects: {}
   materials:
     importMaterials: 1

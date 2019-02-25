@@ -1,26 +1,14 @@
 fileFormatVersion: 2
-guid: cb953f94394bd2744b1dc833736407bf
+guid: 5ac781418c840d4489665a88596aa6f3
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Security- low poly.003
-    100004: Security- low poly.004
     400000: //RootNode
-    400002: Security- low poly.003
-    400004: Security- low poly.004
-    2100000: Case
-    2100002: Front Face
-    2100004: Camera LIght
+    2100000: Material.002
     2300000: //RootNode
-    2300002: Security- low poly.003
-    2300004: Security- low poly.004
     3300000: //RootNode
-    3300002: Security- low poly.003
-    3300004: Security- low poly.004
-    4300000: Security- low poly.002
-    4300002: Security- low poly.004
-    4300004: Security- low poly.003
+    4300000: Low Poly Mouse 2
   externalObjects: {}
   materials:
     importMaterials: 1
