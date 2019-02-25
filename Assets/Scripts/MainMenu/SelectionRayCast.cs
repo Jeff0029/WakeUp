@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public enum SelectionAction
 {
-    joinLobby = 0,
+    JoinRoom = 0,
     customize,
     option,
     exit
@@ -16,24 +16,29 @@ public class SelectionRayCast : MonoBehaviour
 {
     [SerializeField]
     internal RawImage cursor;
+    [SerializeField]
+    internal TextMeshProUGUI cursorText;
     private Texture defaultIcon;
+    private SelectionMethod curSelectionMethod;
     private SelectableItem curSelection; 
     public SelectableItem CurSelection
     {
         get { return CurSelection; }
     }
-    private Dictionary<SelectionAction, Texture> selectionTextures = new Dictionary<SelectionAction, Texture>();
+    //private Dictionary<SelectionAction, Texture> selectionTextures = new Dictionary<SelectionAction, Texture>();
 
     private void Start()
     {
         // Force MenuSelector
         gameObject.layer = LayerMask.NameToLayer("MenuSelector");
         defaultIcon = cursor.texture;
+    }
 
-        foreach (int selection in Enum.GetValues(typeof(SelectionAction)))
+    private void Update()
+    {
+        if (Input.GetButton("Fire1") && curSelectionMethod != null)
         {
-            Texture selectionIcon = Resources.Load<Texture>("Textures/Icons/Selections/" + Enum.GetName(typeof(SelectionAction), selection));
-            selectionTextures.Add((SelectionAction)selection, selectionIcon);
+            curSelectionMethod();
         }
     }
 
@@ -44,19 +49,23 @@ public class SelectionRayCast : MonoBehaviour
         if (item == null)
         {
             Debug.LogError("Missing SelectableItem component on " + item.name);
-        } else if (curSelection == null) //If we're selecting something currently, stay on that selection
-        {
+        } else {
             curSelection = item;
-            cursor.texture = selectionTextures[item.selection];
+            SelectionComponents components = SelectableItem.GetSelectionComponents(item.selection);
+            cursor.texture = components.selectionIcon;
+            cursorText.text = components.selectionText;
+            curSelectionMethod = components.selectionMethod;
         }
     }
     private void OnTriggerExit(Collider other)
     {
         // Make sure to get the gameObject.  Each components has it's own ID!
-        if (other.gameObject.GetInstanceID() == curSelection.gameObject.GetInstanceID())
+        if (curSelection != null && other.gameObject.GetInstanceID() == curSelection.gameObject.GetInstanceID())
         {
             curSelection = null;
             cursor.texture = defaultIcon;
+            cursorText.text = "";
+            curSelectionMethod = null;
         }
     }
 
