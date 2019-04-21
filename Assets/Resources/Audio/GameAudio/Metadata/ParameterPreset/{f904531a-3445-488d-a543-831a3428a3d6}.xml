@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{f904531a-3445-488d-a543-831a3428a3d6}">
+        <property name="name">
+            <value>Fuzzyness</value>
+        </property>
+        <relationship name="folder">
+            <destination>{28238ec5-442d-4919-8999-929f43fd4d0d}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{1b4998cc-d965-41eb-ab50-81e1898eb03a}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{1b4998cc-d965-41eb-ab50-81e1898eb03a}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>

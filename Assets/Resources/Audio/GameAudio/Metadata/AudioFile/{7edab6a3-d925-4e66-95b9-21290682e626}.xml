@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{7edab6a3-d925-4e66-95b9-21290682e626}">
+        <property name="assetPath">
+            <value>Fuzzy/BassFuzzy.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>31.285691609977324</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{476f664f-5d99-41e2-a224-07cb76c73bfb}</destination>
+        </relationship>
+    </object>
+</objects>

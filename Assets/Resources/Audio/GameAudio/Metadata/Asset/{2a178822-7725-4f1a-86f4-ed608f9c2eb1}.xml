@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="EncodableAsset" id="{2a178822-7725-4f1a-86f4-ed608f9c2eb1}">
+        <property name="assetPath">
+            <value>Fuzzy/</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{476f664f-5d99-41e2-a224-07cb76c73bfb}</destination>
+        </relationship>
+    </object>
+</objects>
