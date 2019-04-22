@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 [RequireComponent(typeof(CharacterController))]
+[RequireComponent(typeof(PhotonView))]
 
-public class PlayerControls : MonoBehaviour
+
+public class PlayerControls : MonoBehaviour, IPunObservable
 {
     [Header("Rotation Settings")]
     [SerializeField]
@@ -41,8 +44,17 @@ public class PlayerControls : MonoBehaviour
 
     private Vector3 jump;
     CharacterController controls;
-    
+    PhotonView PV;
+
     // Start is called before the first frame update
+
+    public void RemoveClientComponents()
+    {
+        Destroy(xPivot.gameObject);
+        Destroy(GetComponent<MenuInputs>());
+        Destroy(this);
+    }
+
     void Start()
     {
         controls = GetComponent<CharacterController>();
@@ -50,11 +62,6 @@ public class PlayerControls : MonoBehaviour
         Cursor.visible = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     void FixedUpdate()
     {
@@ -89,5 +96,10 @@ public class PlayerControls : MonoBehaviour
         transform.eulerAngles = new Vector3(transform.eulerAngles.x, tpLocation.eulerAngles.y, transform.eulerAngles.z);
         xPivot.eulerAngles = new Vector3(tpLocation.eulerAngles.x, xPivot.eulerAngles.y, transform.eulerAngles.z);
         controls.enabled = true;
+    }
+
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+        throw new System.NotImplementedException();
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Photon.Pun;
 using Photon.Realtime;
+using Hashtable = ExitGames.Client.Photon.Hashtable;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,6 +13,7 @@ public class RoomFinder : MonoBehaviourPunCallbacks
     // Start is called before the first frame update
     void Start()
     {
+        PhotonNetwork.AutomaticallySyncScene = true;
         PhotonNetwork.ConnectUsingSettings();
         lobbyFinder = this;
     }
@@ -21,7 +23,7 @@ public class RoomFinder : MonoBehaviourPunCallbacks
         if (canSearchRoom)
         {
             canSearchRoom = false;
-            PhotonNetwork.JoinRandomRoom();
+            PhotonNetwork.JoinRandomRoom(CreateRoomProperties(), 4, MatchmakingMode.FillRoom, TypedLobby.Default, null);
         }
             
         return canSearchRoom;
@@ -53,11 +55,33 @@ public class RoomFinder : MonoBehaviourPunCallbacks
         
     }
 
+    Hashtable CreateRoomProperties()
+    {
+        return new Hashtable
+        {
+            {"levelIndex", 0}
+        };
+    }
+
+    string[] CreateRoomPropertiesForLobby()
+    {
+        return new string[]
+        {
+            "levelIndex"
+        };
+    }
+
     void CreateRoom()
     {
         Debug.Log("Creating Room");
         string roomName = "Room: " + Random.Range(0, 1000).ToString();
-        RoomOptions roomsOps = new RoomOptions() { IsVisible=true, IsOpen=true, MaxPlayers=GlobalConst.MAX_PLAYER };
+        RoomOptions roomsOps = new RoomOptions() {
+            IsVisible= true,
+            IsOpen= true,
+            MaxPlayers= GlobalConst.MAX_PLAYER,
+            CustomRoomProperties= CreateRoomProperties(),
+            CustomRoomPropertiesForLobby= CreateRoomPropertiesForLobby()
+        };
         PhotonNetwork.CreateRoom(roomName, roomsOps);
     }
 
